@@ -22,7 +22,6 @@
         <activity android:name=".StateDisplayActivity" />
         <activity android:name=".UniListDisplayActivity" />
         <activity android:name=".UniDetailsDisplayActivity" />
-        <activity android:name=".AccredDetailsActivity"></activity>
     </application>
 
 </manifest>

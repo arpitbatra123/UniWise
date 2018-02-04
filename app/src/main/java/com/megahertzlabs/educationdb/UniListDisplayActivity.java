@@ -20,20 +20,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UniListDisplayActivity extends AppCompatActivity {
-     TextView test;
      public static List<String> finalunilist, id, survey_year, state, university, address_line1, address_line2, city, district, pincode, website, area_in_acre, latitude, longitude, type, specialized;
+    TextView test;
      ListView listofuniversities;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uni_list_display);
-        test = findViewById(R.id.textView4);
+        test = findViewById(R.id.textView5);
         String APIResponse = getStringFromJson();
         initializeLists();
 
         makeLists(APIResponse);
-        findUnisinState(getIntent().getExtras().getString("statename"));
+
+        String NameofStateforTheLoveofGodPleaseWork = getIntent().getExtras().getString("NameofState");
+        findUnisinState(NameofStateforTheLoveofGodPleaseWork);
+        test.setText(NameofStateforTheLoveofGodPleaseWork);
         listofuniversities = findViewById(R.id.unilist);
         if(finalunilist.isEmpty())
             finalunilist.add("No Universities Found");

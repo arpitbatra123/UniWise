@@ -49,11 +49,6 @@ public class UniDetailsDisplayActivity extends AppCompatActivity {
                         visitWebsite(getIntent().getExtras().getString("uniname"));
                 }
 
-                if (info.indexOf("Click Here") >= 0) {
-                    if (checkNA(info))
-                        viewAccred(getIntent().getExtras().getString("uniname"));
-                }
-
 
             }
         });
@@ -61,7 +56,7 @@ public class UniDetailsDisplayActivity extends AppCompatActivity {
 
 
     public boolean checkNA(String info) {
-        if (info.indexOf("NA") != -1) {
+        if (info.contains("NA")) {
             Toast.makeText(UniDetailsDisplayActivity.this, "Incomplete Information", Toast.LENGTH_SHORT).show();
             return false;
         }
@@ -71,29 +66,24 @@ public class UniDetailsDisplayActivity extends AppCompatActivity {
     }
 
     public void openMap(String uniname) {
-        int index=UniListDisplayActivity.university.indexOf(uniname);
+        int index = UniListDisplayActivity.university.indexOf(uniname);
         Intent intent = new Intent(Intent.ACTION_VIEW);
         //URLEncoder urlEncoder=new URLEncoder();
-        String url="https://www.google.com/maps/search/?api=1&query="+UniListDisplayActivity.latitude.get(index)+","+UniListDisplayActivity.longitude.get(index);
+        String url = "https://www.google.com/maps/search/?api=1&query=" + UniListDisplayActivity.latitude.get(index) + "," + UniListDisplayActivity.longitude.get(index);
         //Uri gmmIntentUri = Uri.parse("geo:"+UniListDisplayActivity.latitude.get(index)+","+UniListDisplayActivity.longitude.get(index)+"?q=" + Uri.encode(uniname));
         intent.setData(Uri.parse(url));
         startActivity(intent);
     }
 
     public void visitWebsite(String uniname) {
-        String url="http://"+UniListDisplayActivity.website.get(UniListDisplayActivity.university.indexOf(uniname));
-        Toast.makeText(this,url, Toast.LENGTH_SHORT).show();
+        String url = "http://" + UniListDisplayActivity.website.get(UniListDisplayActivity.university.indexOf(uniname));
+        Toast.makeText(this, url, Toast.LENGTH_SHORT).show();
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
 
     }
 
-    public void viewAccred(String uniname) {
-        Intent intent=new Intent(UniDetailsDisplayActivity.this,AccredDetailsActivity.class);
-        intent.putExtra("uniname",uniname);
-        startActivity(intent);
-    }
 
     public void finddetails(String uniname) {
 
@@ -108,7 +98,6 @@ public class UniDetailsDisplayActivity extends AppCompatActivity {
             unidetailslist.add("Area in Square Meters : " + UniListDisplayActivity.area_in_acre.get(index));
             unidetailslist.add("Specialized University? : " + UniListDisplayActivity.specialized.get(index));
             unidetailslist.add("Type of University : " + UniListDisplayActivity.type.get(index));
-            unidetailslist.add("Click Here To View Accredition Details");
 
 
         }

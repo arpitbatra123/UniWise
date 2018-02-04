@@ -26,7 +26,7 @@ public class StateDisplayActivity extends AppCompatActivity {
     public void onSearchButtonPressed(View view) {
         if (!statesList.getSelectedItem().toString().equals("Select State from Dropdown")) {
             Intent intent = new Intent(StateDisplayActivity.this, UniListDisplayActivity.class);
-            intent.putExtra("statename", statesList.getSelectedItem().toString());
+            intent.putExtra("NameofState", statesList.getSelectedItem().toString());
             startActivity(intent);
 
 
