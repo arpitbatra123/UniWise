@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EducationDB.iml" filepath="$PROJECT_DIR$/EducationDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UniHub.iml" filepath="$PROJECT_DIR$/UniHub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

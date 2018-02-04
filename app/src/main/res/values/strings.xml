@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EducationDB</string>
+    <string name="app_name">UniWise</string>
     <string name="api_basicinfo">https://data.gov.in/node/2914041/datastore/export/json</string>
     <string name="api_hosteldetails">https://data.gov.in/node/2914061/datastore/export/json</string>
     <string name="api_accred">https://data.gov.in/node/2914381/datastore/export/json</string>
