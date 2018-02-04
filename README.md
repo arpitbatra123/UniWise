@@ -8,6 +8,13 @@ most simplified manner. As we are all aware that there is an availability of an
 extremely huge amount of information that one can access over the Internet. But, a
 more concise and efficient methodology would be significantly efficient to analyze.
 
+**Screenshots**
+
+![screenshot1](https://s10.postimg.org/dj7r3zv7d/screener_1517739160831.png "UniWise Screenshot") ![screenshot2](https://s10.postimg.org/o61k9fb2h/screener_1517739180924.png  "UniWise Screenshot")
+
+![screenshot3](https://s10.postimg.org/v99fp1o7t/screener_1517739203188.png  "UniWise Screenshot")
+
+
 **Solution Description:**
 
 Ours is a model which provides the user to easily and efficiently be aware about the
