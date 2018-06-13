@@ -10,15 +10,15 @@ more concise and efficient methodology would be significantly efficient to analy
 
 **Screenshots**
 
-![screenshot1](https://s10.postimg.org/dj7r3zv7d/screener_1517739160831.png "UniWise Screenshot") ![screenshot2](https://s10.postimg.org/o61k9fb2h/screener_1517739180924.png  "UniWise Screenshot")
+![screenshot1](https://s10.postimg.cc/dj7r3zv7d/screener_1517739160831.png "UniWise Screenshot") ![screenshot2](https://s10.postimg.cc/o61k9fb2h/screener_1517739180924.png  "UniWise Screenshot")
 
-![screenshot3](https://s10.postimg.org/v99fp1o7t/screener_1517739203188.png  "UniWise Screenshot")
+![screenshot3](https://s10.postimg.cc/v99fp1o7t/screener_1517739203188.png  "UniWise Screenshot")
 
 
 **Solution Description:**
 
 Ours is a model which provides the user to easily and efficiently be aware about the
-universities across the country that are quite well organized in terms of the location
+universities across the country that are quite well ccanized in terms of the location
 and the whereabouts of those universities. But,the crux of the model lies in the
 source of collective information that is the Data API provided by the The Indian
 Government as part of the Digital India Open Data Scheme. Therefore,the user gets
