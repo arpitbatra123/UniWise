@@ -18,7 +18,7 @@ more concise and efficient methodology would be significantly efficient to analy
 **Solution Description:**
 
 Ours is a model which provides the user to easily and efficiently be aware about the
-universities across the country that are quite well ccanized in terms of the location
+universities across the country that are quite well organized in terms of the location
 and the whereabouts of those universities. But,the crux of the model lies in the
 source of collective information that is the Data API provided by the The Indian
 Government as part of the Digital India Open Data Scheme. Therefore,the user gets
